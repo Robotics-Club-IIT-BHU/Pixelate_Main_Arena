@@ -41,8 +41,8 @@ class PixArena(gym.Env):
 		self.__load_arena()
 		self.respawn_car()
 
-		self._width = 512
-		self._height = 512
+		self._width = 720
+		self._height = 720
 
 	def move_husky(self, leftFrontWheel, rightFrontWheel, leftRearWheel, rightRearWheel):
 		"""
@@ -269,7 +269,7 @@ class PixArena(gym.Env):
 		if is_flat == True:
 			# Only for those who are getting a blank image in opencv
 			rgb = np.array(rgb)
-			rgb = np.reshape(rgb, (512, 512, 4))
+			rgb = np.reshape(rgb, (self._width, self._height, 4))
 		rgb = np.uint8(rgb)
 		rgb = cv2.cvtColor(rgb, cv2.COLOR_BGR2RGB)
 		rgb = np.rot90(rgb, 3)
