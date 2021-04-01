@@ -18,7 +18,7 @@ Before installing this arena, you need to download certain modules on which it i
    * Execute the following command in your terminal.
 
       ~~~bash
-      pip install -e pix-sample-arena
+      pip install -e pix-main-arena
       ~~~
 
    * To check whether the installation has been successful, you can refer to our guide/cheatsheet to know how to build the gym in your own python script as well as use the utility functions.
@@ -30,7 +30,7 @@ In case there are problems with the PyBullet installation, you can refer to this
 0. You will have to import the package pis_arena, which will be available only if you've completed step 1 in the Installation Guidelines. The arena can be initialized by using:
 
 ~~~python
-env = gym.make("pix_arena-v0")
+env = gym.make("pix_main_arena-v0")
 ~~~
 
 1. Then, you will have to create the working loop, as is normally done in pybullet (using `stepSimulation()`).

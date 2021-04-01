@@ -1,8 +1,8 @@
 import gym 
-import pix_arena
+import pix_main_arena
 
 if __name__=="__main__":
-    env = gym.make("pix_arena-v0")
+    env = gym.make("pix_main_arena-v0")
     
     print("move_husky function--")
     print(env.move_husky.__doc__)

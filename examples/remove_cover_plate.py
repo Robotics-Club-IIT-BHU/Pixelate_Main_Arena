@@ -1,5 +1,5 @@
 import gym
-import pix_arena
+import pix_main_arena
 import time
 import pybullet as p
 import os
@@ -7,7 +7,7 @@ import os
 if __name__=="__main__":
     parent_path = os.path.dirname(os.getcwd())
     os.chdir(parent_path)
-    env = gym.make("pix_arena-v0")
+    env = gym.make("pix_main_arena-v0")
     x=0
     while True:
         p.stepSimulation()

@@ -1,5 +1,5 @@
 import gym
-import pix_arena
+import pix_main_arena
 import time
 import pybullet as p
 import pybullet_data
@@ -9,7 +9,7 @@ import os
 if __name__=="__main__":
     parent_path = os.path.dirname(os.getcwd())
     os.chdir(parent_path)
-    env = gym.make("pix_arena-v0")
+    env = gym.make("pix_main_arena-v0")
     time.sleep(3)
     env.remove_car()
     time.sleep(3)
