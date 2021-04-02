@@ -255,7 +255,7 @@ class PixArena(gym.Env):
 		cameraeyepos = [0, 0, 6.5]
 		cameraup = [0, -1, 0]
 		self._view_matrix = p.computeViewMatrix(cameraeyepos, look, cameraup)
-		fov = 89
+		fov = 92
 		aspect = self._width / self._height
 		near = 0.8
 		far = 10
